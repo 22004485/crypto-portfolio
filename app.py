@@ -8,6 +8,18 @@
 # ==========================================================
 
 import streamlit as st
+st.set_page_config(page_title="Crypto Portfolio Simulator", layout="wide")
+st.markdown(
+    """
+    <style>
+    .main { background-color: #ffffff; color: #000000; }
+    .reportview-container .main { background-color: #ffffff; }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+import streamlit as st
 import yfinance as yf
 import pandas as pd
 import plotly.graph_objects as go
